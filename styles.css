@@ -1,0 +1,171 @@
+/*Variables globales*/
+:root{
+    --MarronFav: rgb(134, 4, 4);
+}
+body{
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      /* background-image: url("/images/fondo.jpg");
+      background-size: cover; */
+}
+
+/* Caja principal de tamaño 800pixeles */
+#Contenido{
+    background-color: rgb(129, 124, 56);
+    background: linear-gradient(to right, rgb(129,124,56), rgb(129, 124, 100));
+    padding-top: 0px;
+    /* padding: 25px; */
+    width: 800px;  
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid black;
+    
+}
+
+/*            Barra de navegacion          */
+/* --------------------------------------- */
+nav {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 18px;
+    background-color: var(--MarronFav);
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+    padding-top: 4px;
+    
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+    
+    
+}
+
+nav a{
+    color: aliceblue;
+    font-style: normal;
+    text-decoration: none;
+    transition:all 0.3s ease;   
+    padding-left: 8px;
+    padding-right: 8px; 
+}
+
+a{
+    color: aliceblue;
+}
+
+a:hover{
+    color: rgb(63, 46, 22);
+}
+nav a:hover{
+    color: rgb(63, 46, 22);
+    background-color: rgb(248, 175, 115);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 2px solid;
+    border-color: black;
+    /* Sombra de los botones */
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+
+.dropbtn{
+    display: none;
+}
+
+@media screen and (max-width: 799px){
+
+/* El contenido lo ajusto al 100% */
+#Contenido{
+    width: 100%;
+
+}
+nav{
+    text-align: left;
+}
+nav a:hover{
+    padding: 5px;
+    padding-left: 15px;
+    /* padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px; */
+    border: 2px solid;
+    border-color: black;
+    border-radius: 10px;
+    /* Sombra de los botones */
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  /* padding: 16px; */
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--MarronFav);
+  border: solid black 2px;
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  /* color: black; */
+  padding: 12px 16px;
+  text-decoration: none; 
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color: #f1f1f1} */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+ 
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+  padding: 12px 16px;
+} */
+
+
+
+}
+
+
+
+
+
